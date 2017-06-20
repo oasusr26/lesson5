@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+
+/* default */
+body {
+    font-size:14px;
+    font-family: 'Ravi Prakash', cursive;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Sacramento', cursive;
+}
+
+.wf-roundedmplus1c { font-family: "Rounded Mplus 1c"; }
+
+h1 {
+  font-size: 20px !important;
+  margin: 0 !important;
+}
+
+
+/* header */
+header h1 {
+  font-family: 'Ravi Prakash', cursive;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 20px;
+}
+
+
+
+/* navbar */
+.navbar-default {
+  background-color: #282828 !important;
+  border-color: #ec87ab !important;
+  padding: 15px 0 !important;
+}
+.navbar-default .navbar-brand {
+  color: #fbf1f1 !important;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f45b91 !important;
+}
+.navbar-default .navbar-text {
+  color: #fbf1f1 !important;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fbf1f1 !important;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f45b91 !important;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #282828 !important;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #fbf1f1 !important;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #fbedf2 !important;
+  background-color: #ec87ab !important;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+  background-color: #f45b91 !important;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #f45b91 !important;
+  background-color: #ec87ab !important;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fbedf2 !important;
+  background-color: #ec87ab !important;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fbedf2 !important;
+  background-color: #ec87ab !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ec87ab !important;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ec87ab !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fbf1f1 !important;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #fbf1f1 !important;
+}
+.navbar-default .navbar-link {
+  color: #fbf1f1 !important;
+}
+.navbar-default .navbar-link:hover {
+  color: #fbedf2 !important;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fbf1f1 !important;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fbedf2 !important;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fbedf2 !important;
+    background-color: #ec87ab !important;
+  }
+}
+
+/* global-nav */
+#target ul > li > a {
+  font-size: 13px;
+}
+
+/* main */
+main {
+  margin: 50px 0;
+}
+
+
+.required {
+  color: #ff0000;
+}
+
+.error {
+  color: #ff0000;
+}
+
+
+
+
+
+/* footer */
+
+
+.fnav {
+  width: 100%;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.fnav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.creative {
+  width: 25%;
+  float: left;
+}
+
+.gallary {
+  width: 25%;
+  float: left;
+}
+
+.company {
+  width: 25%;
+  float: left;
+}
+
+.ir {
+  width: 25%;
+  float: left;
+}
+
+.fnav-right {
+  color: #1AA5B8;
+  font-size: 6px;
+  padding-right: 5px;
+}
+
+.fnav-right:hover {
+  color: #A0D7DE;
+}
+
+#footer dl > dt {
+ color: #3D3D3D; 
+}
+
+#footer dl > dd {
+  padding: 5px 0;
+}
+
+.creative > dd > a,
+.gallary > dd > a,
+.company > dd > a,
+.ir > dd > a
+{
+  color: #6B6B6B;
+  text-decoration: none;
+}
+
+.creative > dd > a:hover,
+.gallary > dd > a:hover,
+.company > dd > a:hover,
+.ir > dd > a:hover
+{
+  color: #BCBCBC;
+}
+
+.copyright {
+  border-top: 1px solid #B7B7B7;
+}
+
+small p {
+    padding: 15px 0;
+}
