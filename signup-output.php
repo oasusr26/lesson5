@@ -1,5 +1,3 @@
-<?php require 'common/header.php';?>
-<?php require 'common/navbar.php';?>
 <?php
 session_start();
 $pdo = new PDO('mysql:host=localhost;dbname=lesson4;charset=utf8', 'root', 'testes77');
@@ -55,7 +53,8 @@ if (empty($sql->fetchAll())) {
 $pdo = null;
 ?>
 
-
+<?php require 'common/header.php';?>
+<?php require 'common/navbar.php';?>
 <div class="container">
     <div class="row">
         <div class="col-sm-10">

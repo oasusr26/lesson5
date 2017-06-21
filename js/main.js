@@ -2,8 +2,8 @@
 window.onload = function(){
 	$('body').fadeMover({
 		'effectType': 1,
-		'inSpeed': 800,
-		'outSpeed': 800,
+		'inSpeed': 1500,
+		'outSpeed': 1500,
 		'inDelay' : '0',
 		'outDelay' : '0',
 		'nofadeOut' : 'nonmover'

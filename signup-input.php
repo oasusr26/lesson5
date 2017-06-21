@@ -1,5 +1,3 @@
-<?php require 'common/header.php';?>
-<?php require 'common/navbar.php';?>
 <?php
 // セッションスタート
 session_start();
@@ -17,7 +15,8 @@ if (isset($_SESSION['customer'])) {
     $phone_number=$_SESSION['customer']['phone_number'];
 }
 ?>
-
+<?php require 'common/header.php';?>
+<?php require 'common/navbar.php';?>
 <main>
     <div class="container">
         <div class="row">

@@ -10,10 +10,8 @@ $sql->execute([$_REQUEST['email'], $_REQUEST['password']]);
 
 $pdo = null;
 ?>
-
-        
 <?php require 'common/header.php';?>
-<?php require 'common/navbar.php';?>
+<?php require 'common/login-navbar.php';?>
 <div class="container">
     <div class="row">
         <div class="col-sm-10">

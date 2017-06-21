@@ -7,7 +7,7 @@
             <main>
                 <fieldset>
                 <legend><b>ログイン</b></legend>
-                    <form action="login-output.php" method="post" class="form-horizontal">
+                    <form action="users-page.php" method="post" class="form-horizontal">
                         <div class="form-group">
                             <label for="email" class="control-label col-sm-4">メールアドレス：</label>
                             <div class="col-sm-6">
