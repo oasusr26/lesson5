@@ -15,7 +15,19 @@
                     <li><a href="users-page.php">HOME</a></li>
                     <li><a href="#">カート<span class="glyphicon glyphicon-shopping-cart" style="padding-left: 3px;vertical-align: top; font-size: 16px;" aria-hidden="true"></span></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ユーザー情報<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <?php
+                            session_start();
+                            $pdo = new PDO('mysql:host=localhost;dbname=lesson4;charset=utf8', 'root', 'testes77');
+                            $sql = $pdo->prepare('select * from customer where email=? and password=?');
+                            $sql->execute([$_REQUEST['email'], $_REQUEST['password']]);
+
+                            foreach($sql->fetchAll() as $row) {
+                                $_SESSION['customer'] = array('name'=>$row['name']);
+                            }
+                            echo $_SESSION['customer']['name'];
+                            ?>
+                            さんの情報<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">個人情報</a></li>
                             <li><a href="#">個人編集</a></li>
