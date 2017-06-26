@@ -1,14 +1,13 @@
+<?php session_start();?>
 <?php require 'common/header.php';?>
-<?php require 'common/navbar.php';?>
+<?php require 'common/login-navbar.php';?>
 <?php
-// セッションスタート
-session_start();
 // すでにログインしている場合、ログアウトする。
 unset($_SESSION['customer']);
 // DB接続
 $pdo = new PDO('mysql:host=localhost;dbname=lesson4;charset=utf8', 'root', 'testes77');
 $sql = $pdo->prepare('select * from customer where email=? and password=?');
-$sql->execute([$_REQUEST['email'], $_REQUEST['password']]);
+$sql->execute(array($_REQUEST['email'], $_REQUEST['password']));
 
 $pdo = null;
 ?>
@@ -42,7 +41,7 @@ $pdo = null;
                                     echo '<div class="alert alert-success">ログインに成功しました。</div>';
                                     echo '<li>いらっしゃいませ、', $_SESSION['customer']['name'], 'さん。</li>';
                                     echo '<br />';
-                                    
+                                    echo '<p>ログアウトしますか？</p>';
                                     echo '<li><a href="logout-output.php">ログアウト</a></li>';
                             
                                 }else{
@@ -50,10 +49,6 @@ $pdo = null;
                                 }
                             
                             ?>
-                            
-                            
-                            
-                            
                         </ul>
                     </div>
                 </div>

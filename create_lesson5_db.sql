@@ -12,3 +12,10 @@ create table customer (
 update customer set name=?, email=?, password=?, birthday=?, postal_code=?, address=?, phone_number=? where id=?
 
 insert into customer values (null,?,?,?,?,?,?,?)
+
+create table product (
+    product_id varchar(255) primary key,
+    product_name varchar(255) not null,
+    price int not null,
+    stock int not null
+);

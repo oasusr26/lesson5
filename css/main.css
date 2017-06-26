@@ -1,6 +1,4 @@
 @charset "utf-8";
-
-
 /* default */
 body {
     font-size:14px;
@@ -10,26 +8,32 @@ body {
 }
 
 .wf-roundedmplus1c { font-family: "Rounded Mplus 1c"; }
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
 
-h1 {
-  font-size: 20px !important;
+img {
+  vertical-align: bottom;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  padding: 0 !important;
   margin: 0 !important;
 }
 
 
 /* header */
-header h1 {
+.navbar-brand {
   font-family: 'Ravi Prakash', cursive;
   font-family: 'Fredericka the Great', cursive;
-  font-size: 20px;
 }
 
-
+header h1 {
+  font-size: 22px;
+}
 
 /* navbar */
 .navbar-default {
   background-color: #282828 !important;
-  border-color: #ec87ab !important;
+  border: 1px solid #282828 !important;
   padding: 15px 0 !important;
 }
 .navbar-default .navbar-brand {
@@ -43,7 +47,7 @@ header h1 {
   color: #fbf1f1 !important;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fbf1f1 !important;
+  color: #FCFDFD !important;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -136,11 +140,8 @@ main {
   color: #ff0000;
 }
 
-
 /* aside */
-aside ul li {
-  list-style: none;
-}
+
 
 
 /* footer */

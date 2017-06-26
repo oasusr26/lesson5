@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html lang="ja">
     <head>
@@ -20,7 +21,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <style type="text/css">
             nav ul li {padding: 5px 0;}
-            aside h2 {font-size: 13px;font-weight: bold;border: 2px solid #DCDCDC;border-radius: 20px;padding: 7px;background:#F5F5F5;}
+            aside h2 {font-size: 13px;font-weight: bold;border: 2px solid #DCDCDC;border-radius: 20px;padding: 7px;background: #F5F5F5;}
             aside ul li {list-style: none;padding: 5px 0;}
             aside ul li a {color: #696969;}
         </style>
@@ -29,16 +30,23 @@
         <script type="text/javascript" src="js/jquery.cookie.js"></script>
     </head>
     <body>
-<?php require 'common/navbar.php';?>
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-10">
-            <div class="alert alert-success">
-            <p>ログアウトしました。<br />3秒後にトップページに戻ります。</p>
+    <?php require 'common/login-navbar.php';?>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="alert alert-success">
+                <?php
+                if (isset($_SESSION['customer'])) {
+                    unset($_SESSION['customer']);
+                    echo '<p>ログアウトしました。<br />3秒後にトップページに戻ります。</p>';
+                }else{
+                    echo '<p>すでにログアウトしています。<br />3秒後にトップページに戻ります。</p>';
+                }
+                ?>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<?php require 'common/footer.php';?>
+    
+    <?php require 'common/footer.php';?>

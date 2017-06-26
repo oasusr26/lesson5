@@ -3,31 +3,31 @@
                 <div class="fnav">
                     <dl class="creative">
                         <dt>CM・雑誌掲載依頼</dt>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>aaaa</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>bbbb</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>cccc</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>dddd</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>aaaa</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>bbbb</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>cccc</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>dddd</a></dd>
                     </dl>
                     <dl class="gallary">
                         <dt>ギャラリー集</dt>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>aaaa</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>bbbb</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>cccc</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>dddd</a></dd>
+                        <dd><a href="#" target="_self"><span class="fnav-right">&#x25B6;</span>aaaa</a></dd>
+                        <dd><a href="#" target="_self"><span class="fnav-right">&#x25B6;</span>bbbb</a></dd>
+                        <dd><a href="#" target="_self"><span class="fnav-right">&#x25B6;</span>cccc</a></dd>
+                        <dd><a href="#" target="_self"><span class="fnav-right">&#x25B6;</span>dddd</a></dd>
                     </dl>
                     <dl class="company">
                         <dt>採用情報</dt>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>aaaa</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>bbbb</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>cccc</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>dddd</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>aaaa</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>bbbb</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>cccc</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>dddd</a></dd>
                     </dl>
                     <dl class="ir">
                         <dt>IR情報</dt>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>aaaa</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>bbbb</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>cccc</a></dd>
-                        <dd><a href="#"><span class="fnav-right">&#x25B6;</span>dddd</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>aaaa</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>bbbb</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>cccc</a></dd>
+                        <dd><a href="#" target="_blank"><span class="fnav-right">&#x25B6;</span>dddd</a></dd>
                     </dl>
                 </div>
             </div><!-- /.fnav -->

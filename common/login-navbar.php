@@ -13,21 +13,21 @@
             <div class="collapse navbar-collapse" id="target">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="users-page.php">HOME</a></li>
-                    <li><a href="#">カート<span class="glyphicon glyphicon-shopping-cart" style="padding-left: 3px;vertical-align: top; font-size: 16px;" aria-hidden="true"></span></a></li>
+                    <li><a href="#">カート<span class="glyphicon glyphicon-shopping-cart" style="padding-left: 3px;vertical-align: top; font-size: 17px;" aria-hidden="true"></span></a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <?php
-                            session_start();
-                            $pdo = new PDO('mysql:host=localhost;dbname=lesson4;charset=utf8', 'root', 'testes77');
+                            
+                            $pdo = new PDO('mysql:host=localhost;dbname=lesson5;charset=utf8', 'root', 'testes77');
                             $sql = $pdo->prepare('select * from customer where email=? and password=?');
                             $sql->execute([$_REQUEST['email'], $_REQUEST['password']]);
 
                             foreach($sql->fetchAll() as $row) {
                                 $_SESSION['customer'] = array('name'=>$row['name']);
                             }
-                            echo $_SESSION['customer']['name'];
+                            echo $_SESSION['customer']['name'], 'さんの情報<span class="caret"></span></a>';
                             ?>
-                            さんの情報<span class="caret"></span></a>
+                        
                         <ul class="dropdown-menu">
                             <li><a href="#">個人情報</a></li>
                             <li><a href="#">個人編集</a></li>
@@ -43,6 +43,19 @@
                             <li><a href="#">会社概要</a></li>
                             <li><a href="#">アクセス</a></li>
                             <li><a href="#">沿革</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">商品検索<span class="glyphicon glyphicon-search" style="padding-left: 7px;font-size: 17px;"></span><span class="caret"></span></a>
+                        <ul class="dropdown-menu search-menu">
+                            <li>
+                                <form action="product.php" method="post">
+                                    <span class="input-group">    
+                                        <input type="text" name="keyword" placeholder="商品検索" class="form-control">
+                                        <span class="input-group-addon inner-search-icon"><span class="glyphicon glyphicon-search search-icon"></span></span>
+                                    </span>
+                                </form>
+                            </li>   
                         </ul>
                     </li>
                     <li><a href="#">お問い合わせ</a></li>

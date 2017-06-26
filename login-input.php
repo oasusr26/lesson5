@@ -1,5 +1,5 @@
 <?php require 'common/header.php';?>
-<?php require 'common/navbar.php';?>
+<?php require 'common/login-navbar.php';?>
 
 <div class="container">
     <div class="row">
