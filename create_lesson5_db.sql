@@ -19,3 +19,6 @@ create table product (
     price int not null,
     stock int not null
 );
+
+insert into product values (1, '松の実', 300, 4);
+insert into product values (2, 'ひまわりの種', 500, 2);

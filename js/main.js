@@ -61,3 +61,21 @@ $(function(){
         },switchDelay);
     });
 });
+
+// メインエリア　水の波紋エフェクト
+window.onload = function() {
+	$('body').ripples({
+	    resolution: 512,
+	    dropRadius: 20,
+	    perturbance: 0.04
+	});
+};
+
+// footerスライダー画像
+window.onload = function(){
+	$("#photo").endlessRiver({
+		speed: 40,
+		buttons: false,
+		pause: true
+	});
+};

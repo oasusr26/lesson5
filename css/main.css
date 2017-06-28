@@ -15,10 +15,22 @@ img {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  padding: 0 !important;
+  padding: 0;
   margin: 0 !important;
 }
 
+h2 {
+  padding: 7px;
+  border: 2px solid #F09199;
+  border-radius: 10px;
+  font-size: 20px !important;
+}
+
+h3.product-image {
+  border-left: 3px solid #fffacd;
+  border-bottom: 1px solid #fffacd;
+  font-size: 17px;
+}
 
 /* header */
 .navbar-brand {
@@ -140,9 +152,62 @@ main {
   color: #ff0000;
 }
 
+
+#photo li {
+  width: 300px;
+  height: 250px;
+}
+
+#photo img {
+  width: 320px;
+  height: auto;
+}
+
+/* article */
+.detail {
+  text-align: left;
+}
+
+button a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-left {
+  float: right;
+  clear: both;
+}
+
 /* aside */
+aside h2 {
+  font-size: 17px !important;
+}
 
-
+aside h2 {
+  color: #513629;
+  font-size: 13px;
+  font-weight: bold;border: 2px solid #FFE5C0;
+  border-radius: 20px;
+  padding: 12px;
+  margin: 0;
+  background: #FFF5E9;
+}
+aside ul {
+  text-align: left;
+}
+aside ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+aside ul li a {
+  color: #696969;
+}
+.aside-list-style {
+  color: #20b2aa;
+  font-size: 24px;
+  padding-right: 5px;
+}
 
 /* footer */
 .fnav {

@@ -35,6 +35,7 @@
         <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash|Tangerine" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash|Sacramento|Tangerine" rel="stylesheet">
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="css/endlessRiver.css">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <style type="text/css">
@@ -43,19 +44,12 @@
         .search-icon {color: #9f6f55;}
         .inner-search-icon {background: #ffff7f;}
         .search-menu {padding: 3px 5px;}
-        /*aside*/
-        aside h2 {color: #513629;font-size: 13px;font-weight: bold;border: 2px solid #FFE5C0;border-radius: 20px;padding: 12px; margin: 0;background: #FFF5E9;}
-        aside ul {text-align:left;}
-        aside ul li {list-style: none;padding: 5px 0;}
-        aside ul li a {color: #696969;}
-        .aside-list-style {color: #20b2aa;font-size: 24px;padding-right: 5px;}
         /* main */
         table thead tr th {background-color: #20b2aa;color: #f0fff0;text-align: center;}
+        table tbody tr td {text-align: right;}
         .detail-thead {background: #f09199;color: #f0fff0;text-align: center;}
+        /* article */
         </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fademover.js"></script>
-        <script type="text/javascript" src="js/jquery.cookie.js"></script>
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
