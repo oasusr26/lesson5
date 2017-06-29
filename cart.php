@@ -21,19 +21,18 @@ if (!empty($_SESSION['product'])) {
             echo '<td>', $product['count'], '</td>';
             // 価格×個数（小計欄）
             $subtotal=$product['price'] * $product['count'];
-            // 小計＝サブ合計＋小計
+            // 合計＝サブ合計＋小計
             $total+=$subtotal;
             echo '<td>', $subtotal, '</td>';
             echo '<td><a href="cart-delete.php?id=', $id, '">削除</a></td>';
             echo '</tr>';
           }
           echo '<tr>';
-          echo '<td class="rowspan">合計</td><td></td><td></td><td></td><td>', $total, '</td>';
+          echo '<td rowspan="4">合計</td><td></td><td></td><td></td><td>', $total, '</td>';
           echo '</tr>';
           ?>
       </tbody>
   </table>
-  
   
 <?php    
 }else{

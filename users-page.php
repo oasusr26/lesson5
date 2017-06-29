@@ -1,4 +1,9 @@
-<?php session_start();?>
+<?php 
+session_start();
+if (!isset($_SESSION['count'])) {
+  $_SESSION['count'] = 0;
+}
+;?>
 <?php require 'common/header.php';?>
 <?php require 'common/login-navbar.php';?>
 <div class="container-fluid">

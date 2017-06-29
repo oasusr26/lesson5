@@ -24,20 +24,18 @@
         <script type="text/javascript" src="js/jquery.cookie.js"></script>
     </head>
     <body>
-<?php require 'common/login-navbar.php';?>
-
-<div class="container">
-    <div class="col-sm-10">
-     <?php
-    //  $pdo = new PDO('mysql:host:localhost;dbname=lesson5;charset=utf8', 'root', 'testes77');
-    //  $sql=$pdo->prepare('delete from product where id=?');
-    //  $sql->execute(array($_REQUEST['id']));
-     unset($_SESSION['product'][$_REQUEST['id']]);
-        echo '<div class="alert alert-success">';
-        echo '<p>カートから商品を削除しました。</p>';
-        echo '</div>';
-     ?>
+    <?php require 'common/login-navbar.php';?>
+    
+    <div class="container">
+        <div class="col-sm-10">
+         <?php
+         unset($_SESSION['product'][$_REQUEST['id']]);
+            echo '<div class="alert alert-success">';
+            echo '<p>カートから商品を削除しました。</p>';
+            echo '</div>';
+            require 'cart.php';
+         ?>
+        </div>
     </div>
-</div>
 
 <?php require 'common/footer.php';?>
