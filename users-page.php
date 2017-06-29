@@ -38,16 +38,16 @@
                             }
                             
                             foreach ($sql->fetchAll() as $row) {
-                                $product_id=$row['product_id'];
+                                $product_id=$row['id'];
                                 $file=$row['file'];
                         ?>
                         <tr>
                             <td><img src="<?= $file;?>" alt="<?= $row['product_name']?>" style="width: 170px;height: 170px;overflow: hidden;" class="img-thumbnail" /></td>
-                            <td><?= $row['product_id'];?></td>
+                            <td><?= $row['id'];?></td>
                             <td><?= $row['product_name'];?></td>
                             <td><?= $row['price'];?></td>
                             <td><?= $row['stock'];?></td>
-                            <td><button type="button" class="btn btn-primary detail"><a href="detail.php?product_id=<?= $product_id;?>">詳細</a></button></td>
+                            <td><button type="button" class="btn btn-primary detail"><a href="detail.php?id=<?= $product_id;?>">詳細</a></button></td>
                         </tr>
                         <?php
                         }

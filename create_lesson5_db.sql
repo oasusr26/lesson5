@@ -22,3 +22,21 @@ create table product (
 
 insert into product values (1, '松の実', 300, 4);
 insert into product values (2, 'ひまわりの種', 500, 2);
+
+create table purchase (
+    id int not null primary key,
+    customer_id int not null,
+    foreign key(customer_id) references customer(id)
+);
+
+create table purchase_detail (
+    purchase_id int auto_increment,
+    product_id int not null,
+    count int not null,
+    order_date timestamp not null default CURRENT_TIMESTAMP,
+    primary key(purchase_id, product_id),
+    foreign key(purchase_id) references purchase(id),
+    foreign key(product_id) references product(id)
+);
+
+alter table 'purchase_detail' change 'product_id2' 'product_id' int not null; 

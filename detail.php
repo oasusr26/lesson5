@@ -18,15 +18,15 @@
                             <tbody>
                                 <?php
                                 $pdo = new PDO('mysql:host=localhost;dbname=lesson5;charset=utf8', 'root', 'testes77');
-                                $sql = $pdo->prepare('select * from product where product_id=?');
-                                $sql->execute(array($_REQUEST['product_id']));
+                                $sql = $pdo->prepare('select * from product where id=?');
+                                $sql->execute(array($_REQUEST['id']));
                                 
                                 
                                 foreach ($sql->fetchAll() as $row) {
                                 
                                     echo '<form action="cart-insert.php" method="post">';
                                     echo '<tr>';
-                                    echo '<td class="text-center col-xs-3">商品ID：</td><td class="text-center">', $row['product_id'], '</td>';
+                                    echo '<td class="text-center col-xs-3">商品ID：</td><td class="text-center">', $row['id'], '</td>';
                                     echo '</tr>';
                                     echo '<tr>';
                                     echo '<td class="text-center">商品名：</td><td class="text-center">', $row['product_name'], '</td>';
@@ -37,7 +37,7 @@
                                     echo '<tr>';
                                     echo '<td class="text-center">個数：</td>';
                                     echo '<td class="text-center">';
-                                    echo '<select name="stock" class="form-control col-xs-3">';
+                                    echo '<select name="count" class="form-control col-xs-3">';
                                     for ($i=1; $i<=100; $i++) {
                                     echo '<option value="', $i, '">', $i, '</option>';
                                     }
@@ -45,7 +45,7 @@
                                     echo '</td>';
                                     echo '</tr>';
                                     echo '<tr>';
-                                    echo '<input type="hidden" name="product_id" value="', $row['product_id'], '">';
+                                    echo '<input type="hidden" name="product_id" value="', $row['id'], '">';
                                     echo '<input type="hidden" name="product_name" value="', $row['product_name'], '">';
                                     echo '<input type="hidden" name="price" value="', $row['price'], '">';
                                     echo '<td rowspan="2"></td><td><div class="text-center"><button type="submit" class="btn btn-primary">購入</button></div></td>';
